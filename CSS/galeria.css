@@ -2,10 +2,12 @@
 
 #galeria {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     justify-content: center;
+    align-items: flex-start;
     gap: 20px;
-    padding: 20px;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 #galeria h3 {
@@ -20,13 +22,16 @@
     margin-bottom: 40px;
 }
 
-.grid-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+.gContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 20px;
+    padding: 20px;
 }
 
-.grid-container img {
+.gContainer img {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 20px;
