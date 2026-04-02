@@ -31,6 +31,12 @@
     padding: 20px;
 }
 
+.gContainer img {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+}
+
 .tooltip {
     position: absolute;
     background: #333;
