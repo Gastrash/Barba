@@ -15,8 +15,8 @@
 #hero h1 {
     font-size: 48px;
     margin-bottom: 20px;
-    height: 30vh;
     width: 70vw;
+    height: 25vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -24,15 +24,15 @@
     border: 2px solid #e0b011;
 }
 
-#hero h2 {
-    font-size: 24px;
-    margin-bottom: 40px;
-}
-
 #hero p {
-    font-size: 18px;
+    font-size: 30px;
     text-align: center;
     height: 30vh;
+    width: 70vw;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     border: 2px solid #e0b011;
 }
