@@ -7,6 +7,8 @@
     align-items: center;
     gap: 20px;
     width: 100%;
+
+    color: #fff;
 }
 
 #galeria h3 {
@@ -33,12 +35,13 @@
   width: 250px;
   height: 250px;
   object-fit: cover;
-  border: 3px solid red;
 }
 
 .tooltip {
+    width: 150px;
+    height: 50px;
     position: absolute;
-    background: #333;
+    background: #6b0f0f;
     color: #fff;
     padding: 10px;
     border-radius: 5px;

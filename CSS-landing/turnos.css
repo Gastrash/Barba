@@ -1,0 +1,23 @@
+/* turnos */
+
+#turnos {
+    background-color: #301313;
+    padding: 40px 20px;
+    text-align: center;
+
+    height: 65vh;
+    width: 100%;
+}
+
+#tituloTurnos {
+    font-size: 36px;
+    color: #000000;
+    margin-bottom: 20px;
+}
+
+#infoTurnos {
+    font-size: 18px;
+    color: #000000;
+    max-width: 600px;
+    margin: 0 auto;
+}

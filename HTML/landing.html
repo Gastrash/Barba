@@ -9,37 +9,41 @@
 
         <!-- CSS -->
         <link rel="stylesheet"
-        href="../CSS/global.css">
+        href="../CSS-landing/global.css">
         <link rel="stylesheet"
-        href="../CSS/header.css">
+        href="../CSS-landing/header.css">
         <link rel="stylesheet"
-        href="../CSS/hero.css">
+        href="../CSS-landing/hero.css">
         <link rel="stylesheet"
-        href="../CSS/about.css">
+        href="../CSS-landing/about.css">
         <link rel="stylesheet"
-        href="../CSS/galeria.css">
+        href="../CSS-landing/galeria.css">
+        <link rel="stylesheet"
+        href="../CSS-landing/turnos.css">
     </head>
 
     <body>
 
         <header>
-            <h1>BARBAS</h1>
+            <a id="titulo" href="#hero">BARBAS</a>
             <nav>
-                <a class="enlaces" href="#sobreNosotros">Contactanos</a>
-                <a class="enlaces" href="#galeria">Estilos</a>
+                <a class="enlace" href="#sobreNosotros">Contactanos</a>
+                <a class="enlace" href="#galeria">Estilos</a>
             </nav>    
         </header>
 
         <main>
 
+            <div class="tooltip"></div>
+
             <section id="hero">
                 <h1>BARBERIA & PELUQUERIA</h1>
                 <p>This is the home page of the BARBAS website.</p>
                 <div id="actions">
-                    <button id="turnos"
-                    class="buttons">RESERVA TU TURNO</button>
-                    <button id="sucursales"
-                    class="buttons">NUESTRAS SUCURSALES</button>
+                    <a href="#turnos"
+                    class="buttons">RESERVA TU TURNO</a>
+                    <a href="market.html"
+                    class="buttons">TIENDA ONLINE</a>
                 </div>
             </section>
 
@@ -56,19 +60,27 @@
                 <h3>Galería de Cortes</h3>
                 <h1>Estilos</h1>
                 <div class="gContainer">
-                    <img src="IMG-1.jpg" alt="Imagen 1"
+                    <img src="../img/corte1.jpg" alt="Imagen 1"
                     data-info="Descripción de la imagen 1">
-                    <img src="IMG-2.jpg" alt="Imagen 2"
+                    <img src="../img/corte2.jpg" alt="Imagen 2"
                     data-info="Descripción de la imagen 2">
-                    <img src="IMG-3.jpg" alt="Imagen 3"
+                    <img src="../img/corte3.jpg" alt="Imagen 3"
                     data-info="Descripción de la imagen 3">
-                    <img src="IMG-4.jpg" alt="Imagen 4"
+                    <img src="../img/corte4.jpg" alt="Imagen 4"
                     data-info="Descripción de la imagen 4">
-                    <img src="IMG-5.jpg" alt="Imagen 5"
+                    <img src="../img/corte5.jpg" alt="Imagen 5"
                     data-info="Descripción de la imagen 5">
-                    <img src="IMG-6.jpg" alt="Imagen 6"
+                    <img src="../img/corte6.jpg" alt="Imagen 6"
                     data-info="Descripción de la imagen 6">
                 </div>
+            </section>
+
+            <section id="turnos">
+                <h1 id="tituloTurnos">Reserva tu Turno</h1>
+                <p id="infoTurnos">Para reservar tu turno, por favor contáctanos 
+                a través de nuestro número de teléfono o envíanos
+                un correo electrónico. Estamos ubicados en 
+                [dirección de la barbería]. ¡Esperamos verte pronto!</p>
             </section>
 
         </main>

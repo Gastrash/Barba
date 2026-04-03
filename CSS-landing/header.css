@@ -6,7 +6,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
+    padding: 20px 20px;
     
     position: fixed;
     top: 0;
@@ -15,20 +15,32 @@ header {
     z-index: 1000;
 }
 
-header h1 {
-    letter-spacing: 3px;
+#titulo {
+    letter-spacing: 5px;
     font-size: 24px;
+    text-decoration: none;
+    color: white;
+    transition: color 2s ease;
 }
 
-nav {
+#titulo:hover {
+    color: #e0b011;
+    transform: scale(1.1);
+}
+
+nav{
     display: flex;
     flex-direction: row;
-    align-items: center;
     gap: 20px;
 }
 
-#contactanos, #galeria {
+.enlace {
     color: #fff;
     text-decoration: none;
     font-size: 16px;
+    transition: color 0.9s ease;
+}
+
+.enlace:hover {
+    color: #e0b011;
 }
