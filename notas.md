@@ -1,3 +1,4 @@
+
 1. Bowl Cut Is Back: Embrace Your Rebellious Nature with Style.
 
 A vintage cut has evolved into a versatile fashion-forward hairstyle that can be matched with your personality. Forget about awkward school photos and dive into the endless range of statement-worthy possibilities!.
