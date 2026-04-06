@@ -13,7 +13,7 @@
 /* hero */
 
 #hero {
-    background: rgb(122, 115, 115);
+    background-image: url('../img/mas img/fondo10.jpg');
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -31,11 +31,7 @@
     align-items: center;
     flex-direction: column;
     margin-bottom: 20vh;
-    background: #9c9c9c85;
-    position: relative;
-    backdrop-filter: blur(10px);
     gap: 10px;
-    z-index: 1;
     padding: 10px;
 }
 
@@ -60,7 +56,6 @@
     justify-content: center;
     align-items: center;
     flex-direction: row;
-    color: black;
     gap: 5px;
     margin: 0;
 }
