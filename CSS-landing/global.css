@@ -8,6 +8,7 @@
 html, body {
   margin: 0;
   padding: 0;
+  width: 100vw;
   overflow-x: hidden;
 }
 
@@ -20,13 +21,11 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: strech;
-
-  width: 100%;
   height: auto;
 }
 
 main {
-  width: 100%;
+  width: 101vw;
   height: auto;
   display: flex;
   flex-direction: column;
@@ -38,29 +37,34 @@ footer {
   background-color: #353333;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
+  justify-content: flex-start;
+  align-items: center;
   color: #fff;
-  padding: 20px;
   text-align: center;
   min-height: 45vh;
   width: 100%;
+  border-top: #1b1818 solid 5px;
 }
 
 footer div {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   gap: 10px;
   width: 100%;
-  height: 80%;
+  height: 35vh;
+  padding: 20px;
 }
 
-footer p {
+#derechos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin: 0;
-  font-size: 14px;
+  font-size: 20px;
   color: #fff;
   width: 100%;
-  height: 20%;
+  height: 10vh;
+  border-top: #1b1818 solid 5px;
 }
