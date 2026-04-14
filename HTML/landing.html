@@ -32,10 +32,10 @@
             <a id="titulo" href="#hero">BARBAS</a>
             <nav>
                 <a class="enlace"
-                href="#sobreNosotros">Contactanos</a>
+                href="#contactanos">Contactanos</a>
                 <a class="enlace"
                 href="#galeria">Estilos</a>
-            </nav>    
+            </nav>
         </header>
 
         <main>
@@ -43,12 +43,6 @@
             <div class="tooltip"></div>
 
             <section id="hero">
-
-                <video autoplay muted loop playsinline
-                class="bg-video">
-                    <source src="../img/video4.mp4"
-                    type="video/mp4">
-                </video>
 
                 <div id="hero-container">
                     <p>
@@ -128,34 +122,30 @@
                 </div>
             </section>
 
-            <section id="contactanos">
-                <div id="canalesContainer">
+            <section id="mensajeAuth">
+                <div id="authSection">
+                    <div id="mensajesContainer">
+                        <form id="formAuth">
+                            <h1>Iniciar Sesión</h1>
+                            <input class="inputAuth">
+                            <label>Nombre de Usuario
+                            </label>
+                            <input class="inputAuth">
+                            <label>Contraseña
+                            </label>
+                            <button id="buttonForm">Ingresar</button>
+                        </form>
+                    </div>
                 </div>
                 <div id="formContainer">
-                    <form id="form">
+                    <form id="formMensajes">
                         <h1>Contactanos</h1>
                         <p>Envianos un mensaje:</p>
                         <input class="inputContact mensaje" placeholder=
                         "Hola!, me encantaría un turno para el lunes, a las 10:00">
                         <button id="buttonForm">Enviar</button>
-                </form>
-            </section>
-
-            <section id="authSection">
-                    <div id="imgContainer">
-                        <img src="../img/mas img/fondo11.jpg" alt="imagen 11">
-                    </div>
-                    <div id="formContainer">
-                        <form id="formAuth">
-                            <h1>Iniciar Sesión</h1>
-                            <input class="input">
-                            <label>Nombre de Usuario
-                            </label>
-                            <input class="input">
-                            <label>Contraseña
-                            </label>
-                            <button id="buttonForm">Ingresar</button>
                     </form>
+                </div>
             </section>
 
         </main>
