@@ -4,7 +4,7 @@
 dorado oscuro:#B8960C
 dorado claro:#FFF3B0*/
 
-#contactanos {
+#mensajeAuth {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -15,27 +15,13 @@ dorado claro:#FFF3B0*/
     padding: 40px 0;
 }
 
-#canalesContainer {
-    background: gray;
-    height: 100%;
-    width: 35%;
-    object-fit: cover;
-    object-position: center;
-    overflow: hidden;
-}
-
-img {
-  height: 100%;
-  width: 100%;
-}
-
-#formContainer {
+#mensajeContainer {
     height: 100%;
     width: 65%;
     background: white;
 }
 
-#form {
+#formMensajes {
     color: white;
     width: 100%;
     height: 100%;
@@ -48,12 +34,14 @@ img {
     position: relative;
 }
 
-#form h1 {
-    
+#formMensajes h1 {
+    height: 15%;
+    width: 80%;
 }
 
-#form p{
-    
+#formMensajes p{
+    height: 15%;
+    width: 80%;
 }
 
 .inputContact {
