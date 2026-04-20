@@ -5,8 +5,9 @@
     padding: 40px 20px;
     text-align: center;
 
-    height: 65vh;
+    height: 75vh;
     width: 100%;
+    scroll-margin-top: 15vh;
 }
 
 #tituloTurnos {
