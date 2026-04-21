@@ -69,3 +69,13 @@ footer div {
   height: 10vh;
   border-top: #1b1818 solid 5px;
 }
+
+.bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
