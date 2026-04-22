@@ -39,7 +39,7 @@ main {
 }
 
 footer {
-  background-color: #353333;
+  background-color: rgb(39, 34, 34);
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
