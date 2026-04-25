@@ -1,8 +1,7 @@
-//galeria de Estilos JS
-
 // DOM tooltip
 
-const tooltip = document.querySelector(".tooltip");
+const tooltip =
+document.querySelector(".tooltip");
 const imgs = document.querySelectorAll(".slide img");
 
 // DOM carrusel
@@ -11,8 +10,15 @@ const track = document.getElementById("track");
 const slides = document.querySelectorAll(".slide");
 const prevButton = document.getElementById("prevButton");
 const nextButton = document.getElementById("nextButton");
+const firstClone = slides[0].cloneNode(true);
+const lastClone = slides[slides.length - 1].cloneNode(true);
 
-let indexCarrusel = 0;
+track.appendChild(firstClone);
+track.insertBefore(lastClone, track.firstChild);
+
+let indexCarrusel = 1;
+
+let isMoving = false;
 
 // Funciones carrusel
 
@@ -43,14 +49,40 @@ imgs.forEach(img => {
 
 // Eventos carrusel
 
+track.addEventListener("transitionend", () => {
+    const allSlides =
+    document.querySelectorAll(".slide");
+
+    if (allSlides[indexCarrusel] === firstClone)            
+    {
+        track.style.transition = "none";
+        indexCarrusel = 1;
+        updateCarrusel();
+    }
+
+    if (allSlides[indexCarrusel] === lastClone){
+        track.style.transition = "none";
+        indexCarrusel = allSlides.length - 2;
+        updateCarrusel();
+    }
+
+    setTimeout(() => {
+        track.style.transition = 
+        "transform 0.4s ease";
+    }, 0);
+    isMoving = false;
+});
+
+
 nextButton.addEventListener("click", () => {
-    indexCarrusel =
-    (indexCarrusel + 1) % slides.length;
+    if(isMoving) return;
+    isMoving = true;
+    indexCarrusel++;
     updateCarrusel();
 });
 
 prevButton.addEventListener("click", () => {
-    indexCarrusel =
-    (indexCarrusel - 1 + slides.length) % slides.length;
+    isMoving = true;
+    indexCarrusel--;
     updateCarrusel();
 });
