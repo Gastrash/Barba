@@ -1,8 +1,27 @@
-//galeria de cortes
+//galeria de Estilos JS
+
+// DOM tooltip
 
 const tooltip = document.querySelector(".tooltip");
+const imgs = document.querySelectorAll(".slide img");
 
-const imgs = document.querySelectorAll(".gContainer img");
+// DOM carrusel
+
+const track = document.getElementById("track");
+const slides = document.querySelectorAll(".slide");
+const prevButton = document.getElementById("prevButton");
+const nextButton = document.getElementById("nextButton");
+
+let indexCarrusel = 0;
+
+// Funciones carrusel
+
+function updateCarrusel() {
+    track.style.transform =
+    `translateX(-${indexCarrusel * 100}%)`;
+}
+
+// Eventos tooltip
 
 imgs.forEach(img => {
     img.addEventListener("mouseenter", (e) => {
@@ -20,4 +39,18 @@ imgs.forEach(img => {
         img.classList.remove("hovered");
         tooltip.classList.remove("active");
     });
+});
+
+// Eventos carrusel
+
+nextButton.addEventListener("click", () => {
+    indexCarrusel =
+    (indexCarrusel + 1) % slides.length;
+    updateCarrusel();
+});
+
+prevButton.addEventListener("click", () => {
+    indexCarrusel =
+    (indexCarrusel - 1 + slides.length) % slides.length;
+    updateCarrusel();
 });

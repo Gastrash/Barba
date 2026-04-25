@@ -68,7 +68,7 @@ dorado claro:#FFF3B0*/
     border: 3px solid #FFD700;
     padding: 20px;
     margin-bottom: 70px;
-    margin-top: 60px;
+    margin-top: 30px;
 }
 
 #infoContact p {
@@ -123,8 +123,7 @@ dorado claro:#FFF3B0*/
     font-family: 'oswald', sans-serif;
     font-size: 50px;
     padding: 20px;
-    margin-bottom: 30px;
-    margin-top: 60px;
+    margin-top: 30px;
     border-bottom: 2px solid #FFD700;
     border: 3px solid #FFD700;
 }
@@ -136,34 +135,34 @@ dorado claro:#FFF3B0*/
     justify-content: center;
     align-items: center;
     font-family: 'oswald', sans-serif;
-    margin-top: 50px;
+    margin-top: 30px;
 }
 
-.inputContact {
+#inputEmail {
   padding: 10px;
   padding-left: 15px;
   color: black;
-  margin-top: 40px;
-  margin-bottom: 25px;
+  margin-top: 20px;
+  width: 60%;
+  height: 10%;
+}
+
+#inputMensaje {
+  padding: 10px;
+  color: black;
+  margin-top: 20px;
+  margin-bottom: 20px;
   width: 60%;
   height: 20%;
 }
 
-.inputContact.mensaje {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
 #buttonForm {
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
-    width: 40%;
-    height: 10%;
+    width: 20%;
     color: #000000;
     cursor: pointer;
     font-size: clamp(14px, 2vw, 30px);
     background: linear-gradient(145deg, #FFD700 0%, #FFC107 100%);
-    padding: 25px;
+    padding: 5px;
 
     font-weight: 600;
     letter-spacing: 1px;
@@ -171,11 +170,10 @@ dorado claro:#FFF3B0*/
     justify-content: center;
     align-items: center;
     transition: all 0.4s ease;
-    margin-top: 25px;
 }
 
 #buttonForm:hover {
-    transform: scale(1.1);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
 }
 
 /* celular */
@@ -245,7 +243,10 @@ dorado claro:#FFF3B0*/
         border-bottom: none;
     }
 
-    .inputContact {
+    #inputEmail {
+    }
+
+    #inputMensaje {
       padding: 15px;
       padding-left: 0px;
       margin-top: 15px;

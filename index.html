@@ -121,35 +121,57 @@
                 alt="Imagen de fondo" id="fondoGaleria">
                 <h1>ESTILOS</h1>
 
-                <div class="gContainer">
-                    <img src="assets/img/corte1.jpg"
-                    alt="Imagen 1"
-                    data-info=
-                    "Descripción de la imagen 1">
-                    <img src="assets/img/corte8.jpg"
-                    alt="Imagen 2"
-                    data-info=
-                    "Descripción de la imagen 2">
-                    <img src="assets/img/corte10.jpg"
-                    alt="Imagen 3"
-                    data-info=
-                    "Descripción de la imagen 3">
-                    <img src=
-                    "assets/img/corte4.jpg" alt="Imagen 4"
-                    data-info=
-                    "este es un corte de cabello con un estilo moderno y elegante, caracterizado por un degradado suave en los laterales y una parte superior más larga que se peina hacia atrás. Es un look versátil que se adapta tanto a ocasiones formales como informales, y resalta la personalidad de quien lo lleva con confianza y estilo." >
-                    <img src=
-                    "assets/img/corte5.jpg" alt="Imagen 5"
-                    data-info=
-                    "Descripción de la imagen 5">
-                    <img src=
-                    "assets/img/corte6.jpg" alt="Imagen 6"
-                    data-info=
-                    "Descripción de la imagen 6">
-                    <img src=
-                    "assets/img/corte11.jpg" alt="Imagen 7"
-                    data-info=
-                    "Descripción de la imagen 7">
+                <div class="carrusel">
+                    <button id="prevButton" class="navButton"><</button>
+
+                    <div id="viewport">
+                        <div id="track">
+                            <div class="slide">
+                                <img src="assets/img/corte1.jpg"
+                                alt="Imagen 1"
+                                data-info=
+                                "Descripción de la imagen 1">
+                                <img src="assets/img/corte8.jpg"
+                                alt="Imagen 2"
+                                data-info=
+                                "Descripción de la imagen 2">
+                                <img src="assets/img/corte10.jpg"
+                                alt="Imagen 3"
+                                data-info=
+                                "Descripción de la imagen 3">
+                            </div>
+                            <div class="slide">
+                                <img src=
+                                "assets/img/corte4.jpg" alt="Imagen 4"
+                                data-info=
+                                "este es un corte de cabello con un estilo moderno y elegante, caracterizado por un degradado suave en los laterales y una parte superior más larga que se peina hacia atrás. Es un look versátil que se adapta tanto a ocasiones formales como informales, y resalta la personalidad de quien lo lleva con confianza y estilo." >
+                                <img src=
+                                "assets/img/corte5.jpg" alt="Imagen 5"
+                                data-info=
+                                "Descripción de la imagen 5">
+                                <img src=
+                                "assets/img/corte6.jpg" alt="Imagen 6"
+                                data-info=
+                                "Descripción de la imagen 6">
+                            </div>
+                            <div class="slide">   
+                                <img src=
+                                "assets/img/corte11.jpg" alt="Imagen 7"
+                                data-info=
+                                "Descripción de la imagen 7">
+                                <img src=
+                                "assets/img/corte11.jpg" alt="Imagen 8"
+                                data-info=
+                                "Descripción de la imagen 8">
+                                <img src=
+                                "assets/img/corte11.jpg" alt="Imagen 9"
+                                data-info=
+                                "Descripción de la imagen 9">
+                            </div>
+                        </div>
+                    </div>
+
+                    <button id="nextButton" class="navButton">></button>
                 </div>
             </section>
 
@@ -166,9 +188,13 @@
                         <p>Si tienes alguna consulta o deseas reservar un turno,
                         no dudes en enviarnos un mensaje:
                         </p>
-                        <input class="inputContact mensaje" placeholder=
-                        "Hola!, me encantaría un turno para el lunes, a las 10:00">
-                        <button id="buttonForm">Enviar</button>
+                        <input name="email" id="inputEmail" placeholder=
+                        "Tu email" required>
+                        <textarea name="mensaje" id="inputMensaje" 
+                        placeholder="Hola!, me encantaría un turno para el lunes, a las 10:00"
+                        required></textarea>
+
+                        <button type="submit" id="buttonForm">Enviar</button>
                     </form>
                     <div id="infoContact">
                         <h1>Información de Contacto</h1>
