@@ -18,6 +18,8 @@ track.insertBefore(lastClone, track.firstChild);
 
 let indexCarrusel = 1;
 
+updateCarrusel();
+
 let isMoving = false;
 
 // Funciones carrusel
@@ -82,6 +84,7 @@ nextButton.addEventListener("click", () => {
 });
 
 prevButton.addEventListener("click", () => {
+    if(isMoving) return;
     isMoving = true;
     indexCarrusel--;
     updateCarrusel();
