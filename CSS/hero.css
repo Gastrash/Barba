@@ -28,11 +28,11 @@
     flex-direction: column;
     margin-bottom: clamp(20px, 5vw, 150px);
     margin-top: clamp(20px, 8vh, 100px);
-    gap: clamp(5px, 3vw, 10px);
+    gap: clamp(2px, 3vw, 10px);
     /*backdrop-filter: blur(5px);*/
     background-color: rgba(0, 0, 0, 0.534);
     border-radius: 10px;
-    padding: clamp(20px, 5vw, 40px);
+    padding: clamp(10px, 5vw, 40px);
     box-shadow: 0 8px 20px rgba(255, 215, 0, 0.4), 
     0 2px 6px rgba(0,0,0,0.2);
     /*box-shadow: 0 1px 5px #FFD700;*/
@@ -42,7 +42,6 @@
     position: absolute;
     top: 95%;
     background-color: #00000083;
-    font-size: 24px;
     color: #FFD700;
     height: 150px;
     width: 101vw;
@@ -50,36 +49,33 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-end;
-    animation: bounce 3s infinite;
+    animation: bounce 2.5s infinite;
 }
 
 #arrow {
-    width: 30px;
-    height: 30px;
+    width: clamp(30px, 6vw, 60px);
+    height: clamp(30px, 6vw, 60px);
     position: absolute;
-    top: -200%;
+    top: -170%;
     right: 35%;
     /*border: 3px solid #FFD700;*/
 }
 
 #scrollDown {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    text-align: center;
+    font-size: clamp(20px, 2vw, 40px);
     text-decoration: none;
     color: #FFD700;
-    font-size: 18px;
     font-family: 'Oswald', sans-serif;
     letter-spacing: 1px;
-    margin-top: 10px;
-    margin-right: 80px;
+    margin-top: 5px;
+    margin-right: clamp(20px, 6vw, 80px);
     position: relative;
     /*border: 3px solid #FFD700;*/
 }
 
 #hero-container h1 {
-    font-size: clamp(40px, 6vw, 120px);
+    font-size: clamp(29px, 6vw, 120px);
     color: white;
     text-shadow: 2px 2px 10px rgba(0,0,0,0.5);
     line-height: 1.1;
@@ -90,18 +86,18 @@
     justify-content: center;
     align-items: center;
     margin: 0;
-    margin-top: clamp(5px, 5vh, 10px);
+    margin-top: clamp(0px, 6vw, 10px);
 }
 
 #hero-container p {
-    font-size: clamp(10px, 2vw, 25px);
+    font-size: clamp(15px, 2vw, 25px);
     font-family: 'Oswald', sans-serif;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: row;
-    gap: clamp(5px, 2vw, 10px);
+    gap: clamp(2px, 2vw, 10px);
     margin: 0;
 }
 /*rgba(224, 176, 17)*/
@@ -158,10 +154,50 @@
 
 /* celular */
 @media (max-width: 1024px) {
+
+    #hero {
+        gap: clamp(180px, 6vh, 250px)
+    }
+
+    #hero-container {
+        margin: 0;
+        width: 95vw;
+
+    }
+
+    #hero-container h1 {
+        line-height: 1.2;
+        font-weight: 600;
+    }
+
     #actions {
         width: 90vw;
         flex-direction: column;
-        border: #FFC107 solid 2px;
+        gap: clamp(10px, 6vh, 20px);
     }
-    
+
+   .buttons {
+        width: 80%;
+        letter-spacing: 0px;
+    }
+
+    .buttons.tienda {
+        width: 70%;
+        margin-left: 30%;
+        color: #FFD700;
+        background: none;
+        outline: 2px solid #FFD700;
+    }
+
+    #hero-down {
+        align-items: center;
+        height: 200px;
+        top: 90%;
+    }
+
+    #scrollDown {
+        letter-spacing: 0px;
+        margin-left: clamp(20px, 4vw, 30px);
+    }
+
 }
