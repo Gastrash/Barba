@@ -71,6 +71,7 @@
 @media (max-width: 1024px) {
     #sobreNosotros {
         flex-direction: column;
+        scroll-margin-top: 25vh;
         height: 45vh;
     }
 
