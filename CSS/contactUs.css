@@ -13,7 +13,7 @@ dorado claro:#FFF3B0*/
     width: 100vw;
     background-size: cover;
     overflow: hidden;
-    scroll-margin-top: clamp(10vh, 20vh, 15vh);
+    scroll-margin-top: 15vh;
     position: relative;
     background-image: url('../assets/img/fondo13.jpg');
     z-index: 0;
@@ -152,6 +152,10 @@ dorado claro:#FFF3B0*/
 /* celular */
 @media (max-width: 1024px) {
     
+    #contactUs {
+        scroll-margin-top: 11vh;
+    }
+
     #mensajeContainer {
         height: 95%;
         width: 85%;
