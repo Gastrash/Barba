@@ -124,7 +124,7 @@
 
 @media (max-width: 1024px) {
     #galeria {
-        scroll-margin-top: 12vh;
+        scroll-margin-top: 11vh;
     }
     .carrusel {
         width: 100%;
