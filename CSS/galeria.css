@@ -12,7 +12,7 @@
     overflow: hidden;
     color: #fff;
     position: relative;
-    scroll-margin-top: clamp(13vh, 20vh, 15vh);
+    scroll-margin-top: clamp(10vh, 20vh, 15vh);
     font-family: 'oswald', sans-serif;
 }
 
