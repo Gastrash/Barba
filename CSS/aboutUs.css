@@ -8,7 +8,7 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    scroll-margin-top: clamp(15vh, 20vh, 20vh);
+    scroll-margin-top: 20vh;
 }
 
 #bioContainer {
