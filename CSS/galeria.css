@@ -126,9 +126,6 @@
 
 /* tablet */
 @media (max-width: 1024px) {
-    .carrusel {
-        width: 100%;
-    }
 
     .carrusel {
         width: 100%;
@@ -140,7 +137,6 @@
 
     .slide {
         flex-direction: column;
-        width: clamp(140px, 20vw, 410px);
     }
 
     #viewport {
