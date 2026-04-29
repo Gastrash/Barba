@@ -30,7 +30,7 @@
     font-size: clamp(30px, 2vw, 40px);
     background: #0000006d;
     text-align: center;
-    padding: 25px;
+    padding: clamp(10px, 2vw, 25px);
     width: 100%;
 }
 
@@ -43,14 +43,15 @@
     align-items: center;
     text-decoration: none;
     width: 90%;
+    height: 80%;
     gap: clamp(20px, 6vw, 60px);
-    background: none;
+    padding-bottom: clamp(5px, 2vw, 40px);
 }
 
 #viewport {
     width: 100%;
     overflow: hidden;
-    padding: 20px 10px;
+    padding: 40px 20px;
 }
 
 #track {
@@ -67,11 +68,11 @@
 }
 
 .slide img {
-  width: clamp(130px, 20vw, 400px);
-  height: clamp(130px, 20vw, 400px);
+  width: clamp(100px, 35vw, 240px);
+  height: clamp(100px, 35vw, 240px);
   object-fit: cover;
   object-position: top;
-  margin-right: clamp(15px, 10vw, 35px);
+  margin: 0 clamp(10px, 20vw, 20px);
   transition: transform 0.3s ease;
 }
 
@@ -82,9 +83,8 @@
 
 .navButton {
     color: #fff;
-    border: none;
-    height: clamp(100px, 10vw, 100px);
-    width: clamp(100px, 10vw, 100px);
+    height: clamp(80px, 10vw, 100px);
+    width: clamp(80px, 10vw, 100px);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -120,26 +120,24 @@
     opacity: 1;
 }
 
-/* /tooltip */
+/**/
 
-/* Responsividades */
-
-/* tablet */
 @media (max-width: 1024px) {
 
     .carrusel {
         width: 100%;
-    }
-
-    .slide img {
-        margin: 10px 0;
+        height: 95%;
     }
 
     .slide {
         flex-direction: column;
     }
+    
+    .slide img {
+        margin: 5px 0;
+    }
 
     #viewport {
-        padding: 20px 40px 20px 40px;
+        padding: 0 0;
     }
 }
